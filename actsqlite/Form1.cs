@@ -8,7 +8,7 @@ namespace actsqlite
         //agregamos la base de datos 
         string path = "data_table.db";
         string cs = @"URI=file:" + Application.StartupPath + "\\data_table.db";
-        //lab ase de datos se crea en la carpeta debug
+        //lab ase de datos se crea en la carpeta debug dd
         SQLiteConnection con;
         SQLiteCommand cmd;
         SQLiteDataReader dr;
