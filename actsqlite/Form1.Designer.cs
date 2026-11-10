@@ -33,9 +33,9 @@
             lblid = new Label();
             txtnombre = new TextBox();
             txtid = new TextBox();
-            txtinsertar = new Button();
-            txtactualizar = new Button();
-            txteliminar = new Button();
+            btninsertar = new Button();
+            btnactualizar = new Button();
+            btneliminar = new Button();
             dataGridView1 = new DataGridView();
             Nombre = new DataGridViewTextBoxColumn();
             ID = new DataGridViewTextBoxColumn();
@@ -84,32 +84,33 @@
             txtid.Size = new Size(137, 23);
             txtid.TabIndex = 4;
             // 
-            // txtinsertar
+            // btninsertar
             // 
-            txtinsertar.Location = new Point(166, 220);
-            txtinsertar.Name = "txtinsertar";
-            txtinsertar.Size = new Size(75, 23);
-            txtinsertar.TabIndex = 5;
-            txtinsertar.Text = "insertar";
-            txtinsertar.UseVisualStyleBackColor = true;
+            btninsertar.Location = new Point(166, 220);
+            btninsertar.Name = "btninsertar";
+            btninsertar.Size = new Size(75, 23);
+            btninsertar.TabIndex = 5;
+            btninsertar.Text = "insertar";
+            btninsertar.UseVisualStyleBackColor = true;
+            btninsertar.Click += btninsertar_Click;
             // 
-            // txtactualizar
+            // btnactualizar
             // 
-            txtactualizar.Location = new Point(166, 275);
-            txtactualizar.Name = "txtactualizar";
-            txtactualizar.Size = new Size(75, 23);
-            txtactualizar.TabIndex = 6;
-            txtactualizar.Text = "actualizar";
-            txtactualizar.UseVisualStyleBackColor = true;
+            btnactualizar.Location = new Point(166, 275);
+            btnactualizar.Name = "btnactualizar";
+            btnactualizar.Size = new Size(75, 23);
+            btnactualizar.TabIndex = 6;
+            btnactualizar.Text = "actualizar";
+            btnactualizar.UseVisualStyleBackColor = true;
             // 
-            // txteliminar
+            // btneliminar
             // 
-            txteliminar.Location = new Point(166, 343);
-            txteliminar.Name = "txteliminar";
-            txteliminar.Size = new Size(75, 23);
-            txteliminar.TabIndex = 7;
-            txteliminar.Text = "eliminar";
-            txteliminar.UseVisualStyleBackColor = true;
+            btneliminar.Location = new Point(166, 343);
+            btneliminar.Name = "btneliminar";
+            btneliminar.Size = new Size(75, 23);
+            btneliminar.TabIndex = 7;
+            btneliminar.Text = "eliminar";
+            btneliminar.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -137,9 +138,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
-            Controls.Add(txteliminar);
-            Controls.Add(txtactualizar);
-            Controls.Add(txtinsertar);
+            Controls.Add(btneliminar);
+            Controls.Add(btnactualizar);
+            Controls.Add(btninsertar);
             Controls.Add(txtid);
             Controls.Add(txtnombre);
             Controls.Add(lblid);
@@ -160,9 +161,9 @@
         private Label lblid;
         private TextBox txtnombre;
         private TextBox txtid;
-        private Button txtinsertar;
-        private Button txtactualizar;
-        private Button txteliminar;
+        private Button btninsertar;
+        private Button btnactualizar;
+        private Button btneliminar;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn Nombre;
         private DataGridViewTextBoxColumn ID;
